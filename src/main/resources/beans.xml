@@ -11,23 +11,25 @@
         <!--<property name="gender" value="male"></property>-->
         <!--<property name="age" value="46"></property>-->
     <!--</bean>-->
+    <bean id="BeanLifecycleDemoBean" class="com.stackroute.domain.BeanLifecycleDemoBean" init-method="customInit" destroy-method="destroy"></bean>
+
 
     <bean id="actor1" class="com.stackroute.domain.Actor" scope="prototype">
     <constructor-arg name="name" value="Leonard Dicaprio"></constructor-arg>
-    <constructor-arg index="1" value="1"></constructor-arg>
-    <constructor-arg type="int" value="44"></constructor-arg>
+    <constructor-arg name="gender" value="male"></constructor-arg>
+    <constructor-arg name="age" value="44"></constructor-arg>
 </bean>
 
     <bean id="actor2" class="com.stackroute.domain.Actor" scope="prototype">
         <constructor-arg name="name" value="piter Dinklage"></constructor-arg>
-        <constructor-arg index="1" value="1"></constructor-arg>
-        <constructor-arg type="int" value="48"></constructor-arg>
+        <constructor-arg name="gender" value="male"></constructor-arg>
+        <constructor-arg name="age" value="48"></constructor-arg>
     </bean>
 
     <bean id="actor3" class="com.stackroute.domain.Actor" scope="prototype">
         <constructor-arg name="name" value="Prabas"></constructor-arg>
-        <constructor-arg index="1" value="1"></constructor-arg>
-        <constructor-arg type="int" value="37"></constructor-arg>
+        <constructor-arg name="gender" value="male"></constructor-arg>
+        <constructor-arg name="age" value="37"></constructor-arg>
     </bean>
 
     <!--<bean id="movie1" class="com.stackroute.domain.Movie">-->
