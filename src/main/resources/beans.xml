@@ -11,8 +11,8 @@
         <!--<property name="gender" value="male"></property>-->
         <!--<property name="age" value="46"></property>-->
     <!--</bean>-->
-    <bean id="BeanLifecycleDemoBean" class="com.stackroute.domain.BeanPostProcessorDemoBean"></bean>
-    <bean id="BeanLifecycleDemoBeanone" class="com.stackroute.domain.BeanLifecycleDemoBean" init-method="customInit" destroy-method="destroy"></bean>
+    <bean id="BeanLifecycleDemoBean" class="com.stackroute.demo.BeanPostProcessorDemoBean"></bean>
+    <bean id="BeanLifecycleDemoBeanone" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="destroy"></bean>
 
 
     <bean id="actor1" class="com.stackroute.domain.Actor" scope="prototype">
